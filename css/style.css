@@ -1,0 +1,137 @@
+:root{
+    --fuenteHeading : 'PT Sans',sans-serif;
+    --fuenteparrafos:'Open Sans',sans-serif;
+
+    --primario:#784D3C;
+    --blanco:#ffffff;
+    --negro:#000000;
+
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: var(--primario);
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  img{
+  max-width: 100%;
+  }
+
+  .contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h1,h2,h3,h4{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteHeading);
+  }
+
+  h1{
+    font-size: 4.8rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 3.2rem;
+  }
+
+  h4{
+    font-size: 2.8rem;
+  }
+
+
+  /**Utilidades**/
+
+  .nomargin{
+    margin: 0;
+  }
+
+  .nopadding{
+    padding: 0;
+  }
+  .centrartexto{
+    text-align: center;
+  }
+
+  /*HEADER*/
+
+  .header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  
+  .header_texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+   
+   
+  }
+  @media (min-width: 768px){
+    .header_texto{
+        margin-top: 15rem;
+    }
+      
+  }
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo_nombre{
+    font-weight: 400;
+}
+
+.logo_bold{
+    font-weight: 700;
+}
+
+
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    
+    }
+
+    
+}
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
